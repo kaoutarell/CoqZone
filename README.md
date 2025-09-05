@@ -86,4 +86,5 @@ Supports both English and French with a simple toggle button. All content includ
 This project is licensed under the **Apache License 2.0**.  
 > ⚠️ **Important:** No part of this project may be copyrighted or used for commercial purposes without explicit permission. See the [LICENSE.md](LICENSE.md) file for full details.
 
+<hr/>
 <div align="center"> Made with 💜 by the butterfly dev </div>
