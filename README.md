@@ -60,22 +60,6 @@ Styling: Tailwind CSS
 Icons: Lucide React
 Deployment: Vercel
 
-## 📁 Project Structure
-
-coq-zone-website/
-├── app/
-│   ├── globals.css          # Global styles and CSS variables
-│   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Home page component
-├── components/
-│   └── data/
-│       ├── translations.tsx # Multi-language content
-│       └── menuData.tsx     # Menu items and categories
-├── public/
-│   ├── background_hero.jpg  # Hero background image
-│   └── logo_coq_zone.svg    # Brand logo
-├── package.json
-└── README.md
 
 ## 🎨 Design Features
 
