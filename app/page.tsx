@@ -192,13 +192,13 @@ const CoqZoneWebsite = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex justify-center gap-4 animate-fade-in-up animate-delay-400">
+          <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-4 animate-fade-in-up animate-delay-400">
             <button
               onClick={() => scrollToSection("menu")}
               className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold rounded-full text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
             >
               {t.exploreMenu}
-              <ChevronDown className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+              {/* <ChevronDown className="ml-2 w-4 h-4 md:w-5 md:h-5" /> */}
             </button>
             <button
               onClick={() => scrollToSection("delivery")}
@@ -216,51 +216,156 @@ const CoqZoneWebsite = () => {
       </section>
 
       {/* Delivery Services Section */}
+
       <section
         id="delivery"
-        className="py-12 bg-gray-800 border-b border-gray-700"
+        className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden"
       >
-        <div className="max-w-6xl mx-auto px-4">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 gradient-text">
-            {t.orderNow}
-          </h3>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-yellow-500 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-red-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-orange-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="gradient-text">{t.orderNow}</span>
+            </h3>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              {language === "EN"
+                ? "Craving our delicious fried chicken? Get it delivered hot and fresh to your door in minutes!"
+                : "Envie de notre délicieux poulet frit? Faites-le livrer chaud et frais à votre porte en quelques minutes!"}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Uber Eats */}
-            <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="text-white font-bold text-xs md:text-sm text-center">
-                  UBER
-                  <br />
-                  EATS
+            <div className="group cursor-pointer transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 group-hover:border-green-500 rounded-3xl p-8 text-center shadow-2xl group-hover:shadow-green-500/20 transition-all duration-500">
+                <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-green-500/50 transition-all duration-300">
+                  <img src="/uber-eats.svg" alt="" className="w-17 h-17" />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3">
+                  Uber Eats
+                </h4>
+                <p className="text-gray-400 mb-6">
+                  {language === "EN"
+                    ? "Fast delivery in 30 minutes"
+                    : "Livraison rapide en 30 minutes"}
+                </p>
+                <div className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-400 text-white font-bold rounded-full transition-colors duration-300">
+                  {language === "EN" ? "Order Now" : "Commander"}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
                 </div>
               </div>
-              <span className="mt-2 text-sm text-gray-300">Uber Eats</span>
             </div>
 
             {/* DoorDash */}
-            <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-red-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="text-white font-bold text-xs md:text-sm text-center">
-                  DOOR
-                  <br />
-                  DASH
+            <div className="group cursor-pointer transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 group-hover:border-red-500 rounded-3xl p-8 text-center shadow-2xl group-hover:shadow-red-500/20 transition-all duration-500">
+                <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-red-500/50 transition-all duration-300">
+                  <img src="/doordash.svg" alt="" className="w-17 h-17" />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3">DoorDash</h4>
+                <p className="text-gray-400 mb-6">
+                  {language === "EN"
+                    ? "Reliable delivery service"
+                    : "Service de livraison fiable"}
+                </p>
+                <div className="inline-flex items-center px-6 py-3 bg-red-500 hover:bg-red-400 text-white font-bold rounded-full transition-colors duration-300">
+                  {language === "EN" ? "Order Now" : "Commander"}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
                 </div>
               </div>
-              <span className="mt-2 text-sm text-gray-300">DoorDash</span>
             </div>
 
             {/* Skip The Dishes */}
-            <div className="flex flex-col items-center group cursor-pointer">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-orange-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                <div className="text-white font-bold text-xs md:text-sm text-center">
-                  SKIP
-                  <br />
-                  DISHES
+            <div className="group cursor-pointer transform hover:scale-105 transition-all duration-500">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 group-hover:border-orange-500 rounded-3xl p-8 text-center shadow-2xl group-hover:shadow-orange-500/20 transition-all duration-500">
+                <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300">
+                  <img src="/skip.svg" alt="" className="w-13 h-17 pl-1" />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-3">
+                  Skip The Dishes
+                </h4>
+                <p className="text-gray-400 mb-6">
+                  {language === "EN"
+                    ? "Local favorite delivery"
+                    : "Livraison locale préférée"}
+                </p>
+                <div className="inline-flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-400 text-white font-bold rounded-full transition-colors duration-300">
+                  {language === "EN" ? "Order Now" : "Commander"}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
                 </div>
               </div>
-              <span className="mt-2 text-sm text-gray-300">Skip Dishes</span>
             </div>
           </div>
+
+          {/* Special Offer Banner */}
+          {/* <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-orange-500 rounded-3xl p-8 text-center text-black shadow-2xl">
+            <div className="flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mr-4">
+                <span className="text-yellow-400 text-2xl">🔥</span>
+              </div>
+              <h4 className="text-3xl font-bold">
+                {language === "EN" ? "Limited Time Offer!" : "Offre Limitée!"}
+              </h4>
+            </div>
+            <p className="text-xl mb-6">
+              {language === "EN"
+                ? "FREE delivery on orders over $25 • Use code: COQZONE25"
+                : "Livraison GRATUITE sur commandes de plus de 25$ • Code: COQZONE25"}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <span className="px-4 py-2 bg-black text-yellow-400 rounded-full font-bold">
+                {language === "EN" ? "No Minimum" : "Pas de Minimum"}
+              </span>
+              <span className="px-4 py-2 bg-black text-yellow-400 rounded-full font-bold">
+                {language === "EN" ? "Hot & Fresh" : "Chaud & Frais"}
+              </span>
+              <span className="px-4 py-2 bg-black text-yellow-400 rounded-full font-bold">
+                {language === "EN" ? "30 Min Delivery" : "Livraison 30 Min"}
+              </span>
+            </div>
+          </div> */}
         </div>
       </section>
 
