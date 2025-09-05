@@ -5,11 +5,9 @@ import {
   ChevronDown,
   MapPin,
   Phone,
-  Mail,
   Clock,
   Facebook,
   Instagram,
-  Twitter,
   Menu,
   X,
   Globe,
@@ -370,10 +368,6 @@ const CoqZoneWebsite = () => {
                   <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                   <span className="text-sm md:text-base">(514) 123-4567</span>
                 </div>
-                {/* <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                  <span className="text-sm md:text-base">info@coqzone.ca</span>
-                </div> */}
               </div>
             </div>
 

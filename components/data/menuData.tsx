@@ -12,9 +12,15 @@ export interface MenuCategory {
   items: MenuItem[];
 }
 
+// Define the type of your translation object
+interface Translation {
+  categories: Record<string, string>;
+  items: Record<string, { name: string; description: string }>;
+}
+
 export const getMenuCategories = (
   language: TranslationKey,
-  t: any
+  t: Translation
 ): MenuCategory[] => [
   {
     title: t.categories["Chicken Combos"],
