@@ -19,7 +19,7 @@ const CoqZoneWebsite = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [language, setLanguage] = useState<"EN" | "FR">("EN");
+  const [language, setLanguage] = useState<"EN" | "FR">("FR");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,16 +52,19 @@ const CoqZoneWebsite = () => {
   const scrollToSection = (sectionId: SectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
+      const yOffset = -80; // adjust based on your fixed header height
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      window.scrollTo({
+        top: y,
         behavior: "smooth",
-        block: "start",
       });
     }
     setIsMobileMenuOpen(false);
   };
 
   const toggleLanguage = () => {
-    setLanguage(language === "EN" ? "FR" : "EN");
+    setLanguage(language === "FR" ? "EN" : "FR"); //little fix : we want the toggle to display 'EN' when the text is in French
   };
 
   const t = translations[language];
@@ -110,7 +113,7 @@ const CoqZoneWebsite = () => {
               className="flex items-center space-x-1 px-3 py-1 bg-yellow-500 text-black rounded-full font-bold text-sm hover:bg-yellow-400 transition-colors duration-300"
             >
               <Globe className="w-4 h-4" />
-              <span>{language}</span>
+              <span>{language === "FR" ? "EN" : "FR"}</span>
             </button>
 
             <div className="md:hidden">
@@ -129,25 +132,29 @@ const CoqZoneWebsite = () => {
         </nav>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-md">
-            <div className="px-4 py-4 space-y-4">
-              {sections.map((section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section)}
-                  className={`block w-full text-left capitalize font-medium py-2 px-4 rounded-lg transition-colors duration-300 ${
-                    activeSection === section
-                      ? "text-yellow-400 bg-yellow-400/10"
-                      : "text-white hover:text-yellow-400 hover:bg-yellow-400/5"
-                  }`}
-                >
-                  {t[section]}
-                </button>
-              ))}
-            </div>
+        <div
+          className={`md:hidden fixed top-16 left-0 w-full bg-black/95 backdrop-blur-md transition-all duration-500 ease-in-out transform ${
+            isMobileMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-10 pointer-events-none"
+          }`}
+        >
+          <div className="px-4 py-6 space-y-4">
+            {sections.map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`block w-full text-left capitalize font-medium py-2 px-4 rounded-lg transition-colors duration-300 ${
+                  activeSection === section
+                    ? "text-yellow-400 bg-yellow-400/10"
+                    : "text-white hover:text-yellow-400 hover:bg-yellow-400/5"
+                }`}
+              >
+                {t[section]}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
       </header>
 
       {/* Hero Section */}
