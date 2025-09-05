@@ -416,7 +416,7 @@ const CoqZoneWebsite = () => {
 
           <div className="border-t border-gray-700 pt-8 text-center text-gray-500">
             <p className="text-sm md:text-base">
-              &copy; 2024 Coq Zone. All rights reserved.
+              &copy; 2025 Coq Zone. All rights reserved.
             </p>
           </div>
         </div>
