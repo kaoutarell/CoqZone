@@ -18,6 +18,10 @@ export const translations: Record<
     aboutText3: string;
     contactInfo: string;
     hours: string;
+    mondayhours: string;
+    thursdayhours: string;
+    weekendhours: string;
+    wedhours: string;
     followUs: string;
     orderNow: string;
     categories: Record<string, string>;
@@ -45,6 +49,10 @@ export const translations: Record<
     hours: "Hours",
     followUs: "Follow Us",
     orderNow: "Order Now",
+    mondayhours: "Mon - Tues: 11am - 9pm",
+    wedhours: "Closed",
+    thursdayhours: "Thur - Fri: 11am - 9pm",
+    weekendhours: "Sat - Sun: 3pm - 9pm",
     categories: {
       "CHICKEN TENDERS COMBOS": "CHICKEN TENDERS COMBOS",
       "CHICKEN WINGS": "CHICKEN WINGS",
@@ -159,6 +167,10 @@ export const translations: Record<
       "Rejoignez-nous chez Coq Zone - où chaque bouchée est une célébration de saveur!",
     contactInfo: "Informations de Contact",
     hours: "Heures",
+    mondayhours: "Lun - Mar: 11h - 21h",
+    wedhours: "Fermé",
+    thursdayhours: "Jeu - Ven: 11h - 21h",
+    weekendhours: "Sam - Dim: 15h - 21h",
     followUs: "Suivez-Nous",
     orderNow: "Commander Maintenant",
     categories: {

@@ -441,7 +441,7 @@ const CoqZoneWebsite = () => {
 
             <div className="animate-slide-in-right">
               <div className="w-full h-64 md:h-96 gradient-bg rounded-2xl flex items-center justify-center text-white font-bold text-lg md:text-xl shadow-2xl">
-                Restaurant Interior Photo Coming Soon
+                <img src="/coqzone_interior.png" alt="" className="" />
               </div>
             </div>
           </div>
@@ -479,9 +479,10 @@ const CoqZoneWebsite = () => {
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
                   <div className="text-sm md:text-base">
-                    <p>Mon - Thu: 11am - 10pm</p>
-                    <p>Fri - Sat: 11am - 11pm</p>
-                    <p>Sunday: 12pm - 9pm</p>
+                    <p>{t.mondayhours}</p>
+                    <p>{t.wedhours}</p>
+                    <p>{t.thursdayhours}</p>
+                    <p>{t.weekendhours}</p>
                   </div>
                 </div>
               </div>
