@@ -31,9 +31,9 @@ export const translations: Record<
     contact: "contact",
     delivery: "delivery",
     heroTitle: "COQ ZONE",
-    heroSubtitle: "Crispy Perfection, Every Bite!",
+    heroSubtitle: "Crispy Perfection. Every Bite!",
     exploreMenu: "Explore Our Menu",
-    menuTitle: "Our Delicious Menu",
+    menuTitle: "Our Menu",
     aboutTitle: "About Coq Zone",
     aboutText1:
       "Welcome to Coq Zone, where crispy perfection meets bold flavors! We're passionate about serving the most delicious fried chicken, made with premium ingredients and cooked to golden perfection.",
@@ -46,103 +46,97 @@ export const translations: Record<
     followUs: "Follow Us",
     orderNow: "Order Now",
     categories: {
-      "Chicken Combos": "Chicken Combos",
-      "Gourmet Burgers": "Gourmet Burgers",
-      "Fresh Bowls": "Fresh Bowls",
-      "Wings & Fries": "Wings & Fries",
-      "Gourmet Poutines": "Gourmet Poutines",
-      "Wraps & Tacos": "Wraps & Tacos",
+      "CHICKEN TENDERS COMBOS": "CHICKEN TENDERS COMBOS",
+      "CHICKEN WINGS": "CHICKEN WINGS",
+      BURGERS: "BURGERS",
+      "FRIED CHICKEN WRAPS": "FRIED CHICKEN WRAPS",
     },
     items: {
-      "Snack Pack (3pcs)": {
-        name: "Snack Pack (3pcs)",
-        description:
-          "3 crispy fried chicken tenders with golden waffle fries, fresh coleslaw, and your choice of sauce.",
+      Cmb3MCX: {
+        name: "--",
+        description: "--.",
       },
-      "Crispy Classic (5pcs)": {
-        name: "Crispy Classic (5pcs)",
-        description:
-          "5 crispy fried chicken tenders with golden waffle fries, fresh coleslaw, and your choice of sauce.",
+      Cmb5MCX: {
+        name: "Combo 5 MCX Filets de Poulet",
+        description: "--.",
       },
-      "Family Feast (10pcs)": {
-        name: "Family Feast (10pcs)",
-        description:
-          "10 crispy fried chicken tenders with golden waffle fries, fresh coleslaw, and your choice of sauce.",
+      Cmb7MCX: {
+        name: "Combo 7 MCX Filets de Poulet",
+        description: "--.",
       },
-      "Coq Zone Classic Burger": {
-        name: "Coq Zone Classic Burger",
-        description:
-          "Crispy fried chicken fillet with fresh coleslaw, pickles, and our signature Coq Zone sauce on a soft brioche bun.",
+      Cmb10MCX: {
+        name: "Combo 10 MCX Filets de Poulet",
+        description: "--.",
       },
-      "Sweet Chili Burger": {
-        name: "Sweet Chili Burger",
-        description:
-          "Crispy fried chicken with fresh coleslaw, crunchy pickles and sweet chili sauce.",
+      "7Ws": {
+        name: "7 Wings",
+        description: "Sauce of your choice included.",
       },
-      "Spicy Burger": {
-        name: "Spicy Burger",
-        description:
-          "Spicy fried chicken with jalapeños, fresh coleslaw and homemade hot sauce.",
+      "7WsC": {
+        name: "7 Wings Combo",
+        description: "Sauce of your choice included + fries.",
       },
-      "Pocoq Zone Bowl": {
-        name: "Pocoq Zone Bowl",
-        description:
-          "Fluffy rice with golden fried chicken, crunchy edamame, shredded carrots, fresh cucumbers and sauce.",
+      "12Ws": {
+        name: "12 Wings",
+        description: "Sauce of your choice included.",
       },
-      "Rice and Chicken Bowl": {
-        name: "Rice and Chicken Bowl",
-        description:
-          "Fluffy rice topped with golden fried chicken pieces and served with sauce.",
+      "12WsC": {
+        name: "12 Wings Combo",
+        description: "Sauce of your choice included + fries.",
       },
-      "Fries and Chicken Bowl": {
-        name: "Fries and Chicken Bowl",
-        description:
-          "Crispy fries topped with golden fried chicken pieces and served with sauce.",
+      "18Ws": {
+        name: "18 Wings",
+        description: "Sauce of your choice included.",
       },
-      "Solo Box (7pcs)": {
-        name: "Solo Box (7pcs)",
-        description:
-          "7 wings served with perfectly golden fries and your favorite sauce.",
+      "18WsC": {
+        name: "18 Wings Combo",
+        description: "Sauce of your choice included + fries.",
       },
-      "Duo Pack (12pcs)": {
-        name: "Duo Pack (12pcs)",
-        description:
-          "12 wings served with perfectly golden fries and your favorite sauce.",
+      "24Ws": {
+        name: "24 Wings",
+        description: "Sauce of your choice included.",
       },
-      "Party Pack (24pcs)": {
-        name: "Party Pack (24pcs)",
-        description:
-          "24 wings served with perfectly golden fries and your favorite sauce.",
+      "24WsC": {
+        name: "24 Wings Combo",
+        description: "Sauce of your choice included + fries.",
       },
-      "Classic Poutine": {
-        name: "Classic Poutine",
-        description:
-          "Crispy fries with fresh cheese curds and our homemade brown gravy.",
+      "30Ws": {
+        name: "30 Wings",
+        description: "Sauce of your choice included.",
       },
-      "Coq Zone Poutine": {
-        name: "Coq Zone Poutine",
-        description:
-          "Crispy fries with golden fried chicken, fresh cheese curds and our signature coq zone sauce.",
+      "30WsC": {
+        name: "30 Wings Combo",
+        description: "Sauce of your choice included + fries.",
       },
-      "Buffalo Chicken Poutine": {
-        name: "Buffalo Chicken Poutine",
+      bclassic: {
+        name: "Classic Burger Coq Zone",
         description:
-          "Crispy fries with fresh cheese curds and fried chicken coated in spicy buffalo sauce.",
+          "Crispy fried chicken, coleslaw, pickles, and Coq Zone sauce.",
       },
-      "Classic Chicken Wrap": {
-        name: "Classic Chicken Wrap",
+      bsweetchili: {
+        name: "Burger Sweet Chili",
         description:
-          "Delicious wrap filled with Coq Zone fried chicken, fresh veggies, and house-made sauces.",
+          "Crispy fried chicken, coleslaw, pickles, and sweet chili sauce.",
       },
-      "Buffalo Chicken Taco": {
-        name: "Buffalo Chicken Taco",
+      bspicy: {
+        name: "Burger Spicy",
         description:
-          "Soft tortilla with fried chicken in spicy Buffalo sauce, fresh coleslaw and pickles.",
+          "Spicy fried chicken, jalapeños, coleslaw, and homemade hot sauce.",
       },
-      "Supreme Taco": {
-        name: "Supreme Taco",
+      wburger: {
+        name: "Wrap Burger",
         description:
-          "Generous taco with fried chicken, coleslaw, pickles, jalapeños, and our signature sauce.",
+          "Crispy fried chicken, cheddar cheese, fries, pickles, lettuce, and Coq Zone sauce.",
+      },
+      wclassic: {
+        name: "Wrap Classic",
+        description:
+          "Crispy fried chicken, fries, pickles, lettuce, and Coq Zone sauce.",
+      },
+      wspicy: {
+        name: "Wrap Spicy",
+        description:
+          "Spicy fried chicken, fries, jalapeños, lettuce, and homemade hot sauce.",
       },
     },
   },
@@ -153,9 +147,9 @@ export const translations: Record<
     contact: "contact",
     delivery: "livraison",
     heroTitle: "COQ ZONE",
-    heroSubtitle: "Perfection Croustillante, À Chaque Bouchée!",
+    heroSubtitle: "Perfection Croustillante. À Chaque Bouchée!",
     exploreMenu: "Découvrir Notre Menu",
-    menuTitle: "Notre Délicieux Menu",
+    menuTitle: "Notre Menu",
     aboutTitle: "À Propos de Coq Zone",
     aboutText1:
       "Bienvenue chez Coq Zone, où la perfection croustillante rencontre des saveurs audacieuses! Nous sommes passionnés par le service du poulet frit le plus délicieux, fait avec des ingrédients de première qualité et cuit à la perfection dorée.",
@@ -168,103 +162,106 @@ export const translations: Record<
     followUs: "Suivez-Nous",
     orderNow: "Commander Maintenant",
     categories: {
-      "Chicken Combos": "Combos de Poulet",
-      "Gourmet Burgers": "Hamburgers Gastronomiques",
-      "Fresh Bowls": "Bols Frais",
-      "Wings & Fries": "Ailes et Frites",
-      "Gourmet Poutines": "Poutines Gastronomiques",
-      "Wraps & Tacos": "Wraps et Tacos",
+      "CHICKEN TENDERS COMBOS": "COMBO FILETS DE POULET",
+      "CHICKEN WINGS": "AILES DE POULET",
+      BURGERS: "BURGERS",
+      "FRIED CHICKEN WRAPS": "WRAPS AU POULET FRIT",
     },
     items: {
-      "Snack Pack (3pcs)": {
-        name: "Collation (3mcx)",
+      Cmb3MCX: {
+        name: "Combo 3 MCX Filets de Poulet",
         description:
-          "3 lanières de poulet frit croustillant avec frites gaufrées dorées, salade de chou fraîche et votre choix de sauce.",
+          "3 filets de poulet frit croustillants, servis avec des frites gaufrées dorées, salade de chou ou cornichons et sauce de votre choix.",
       },
-      "Crispy Classic (5pcs)": {
-        name: "Classique Croustillant (5mcx)",
+      Cmb5MCX: {
+        name: "Combo 5 MCX Filets de Poulet",
         description:
-          "5 lanières de poulet frit croustillant avec frites gaufrées dorées, salade de chou fraîche et votre choix de sauce.",
+          "5 filets de poulet frit croustillants, servis avec des frites gaufrées dorées, salade de chou ou cornichons et sauce de votre choix.",
       },
-      "Family Feast (10pcs)": {
-        name: "Festin Familial (10mcx)",
+      Cmb7MCX: {
+        name: "Combo 7 MCX Filets de Poulet",
         description:
-          "10 lanières de poulet frit croustillant avec frites gaufrées dorées, salade de chou fraîche et votre choix de sauce.",
+          "7 filets de poulet frit croustillants, servis avec des frites gaufrées dorées, salade de chou ou cornichons et sauce de votre choix.",
+      },
+      Cmb10MCX: {
+        name: "Combo 10 MCX Filets de Poulet",
+        description:
+          "10 filets de poulet frit croustillants, servis avec des frites gaufrées dorées, salade de chou ou cornichons et sauce de votre choix.",
       },
       "Coq Zone Classic Burger": {
-        name: "Hamburger Classique Coq Zone",
+        name: "Coq Zone Classic Burger",
         description:
-          "Filet de poulet frit croustillant avec salade de chou fraîche, cornichons et notre sauce signature Coq Zone sur un pain brioche moelleux.",
+          "10 filets de poulet frit croustillants, servis avec des frites gaufrées dorées, salade de chou ou cornichons et sauce de votre choix.",
       },
-      "Sweet Chili Burger": {
-        name: "Hamburger Chili Doux",
-        description:
-          "Poulet frit croustillant avec salade de chou fraîche, cornichons croquants et sauce chili douce.",
+      "7Ws": {
+        name: "7 Ailes",
+        description: "Choix de sauce inclus.",
       },
-      "Spicy Burger": {
-        name: "Hamburger Épicé",
-        description:
-          "Poulet frit épicé avec jalapeños, salade de chou fraîche et sauce piquante maison.",
+      "7WsC": {
+        name: "7 Ailes Combo",
+        description: "Choix de sauce + frites.",
       },
-      "Pocoq Zone Bowl": {
-        name: "Bol Pocoq Zone",
-        description:
-          "Riz moelleux avec poulet frit doré, edamame croquant, carottes râpées, concombres frais et sauce.",
+      "12Ws": {
+        name: "12 Ailes",
+        description: "Choix de sauce inclus.",
       },
-      "Rice and Chicken Bowl": {
-        name: "Bol Riz et Poulet",
-        description:
-          "Riz moelleux garni de morceaux de poulet frit doré et servi avec sauce.",
+      "12WsC": {
+        name: "12 Ailes Combo",
+        description: "Choix de sauce + frites.",
       },
-      "Fries and Chicken Bowl": {
-        name: "Bol Frites et Poulet",
-        description:
-          "Frites croustillantes garnies de morceaux de poulet frit doré et servies avec sauce.",
+      "18Ws": {
+        name: "18 Ailes",
+        description: "Choix de sauce inclus.",
       },
-      "Solo Box (7pcs)": {
-        name: "Boîte Solo (7mcx)",
-        description:
-          "7 ailes servies avec frites parfaitement dorées et votre sauce préférée.",
+      "18WsC": {
+        name: "18 Ailes Combo",
+        description: "Choix de sauce + frites.",
       },
-      "Duo Pack (12pcs)": {
-        name: "Pack Duo (12mcx)",
-        description:
-          "12 ailes servies avec frites parfaitement dorées et votre sauce préférée.",
+      "24Ws": {
+        name: "24 Ailes",
+        description: "Choix de sauce inclus.",
       },
-      "Party Pack (24pcs)": {
-        name: "Pack Fête (24mcx)",
-        description:
-          "24 ailes servies avec frites parfaitement dorées et votre sauce préférée.",
+      "24WsC": {
+        name: "24 Ailes Combo",
+        description: "Choix de sauce + frites.",
       },
-      "Classic Poutine": {
-        name: "Poutine Classique",
-        description:
-          "Frites croustillantes avec fromage en grains frais et notre sauce brune maison.",
+      "30Ws": {
+        name: "30 Ailes",
+        description: "Choix de sauce inclus.",
       },
-      "Coq Zone Poutine": {
-        name: "Poutine Coq Zone",
-        description:
-          "Frites croustillantes avec poulet frit doré, fromage en grains frais et notre sauce signature coq zone.",
+      "30WsC": {
+        name: "30 Ailes Combo",
+        description: "Choix de sauce + frites.",
       },
-      "Buffalo Chicken Poutine": {
-        name: "Poutine Poulet Buffalo",
+      bclassic: {
+        name: "Burger Classique Coq Zone",
         description:
-          "Frites croustillantes avec fromage en grains frais et poulet frit enrobé de sauce buffalo épicée.",
+          "Poulet frit croustillant, salade de choux, cornichons et sauce Coq Zone.",
       },
-      "Classic Chicken Wrap": {
-        name: "Wrap Poulet Classique",
+      bsweetchili: {
+        name: "Burger Piment Doux",
         description:
-          "Délicieux wrap rempli de poulet frit Coq Zone, légumes frais et sauces maison.",
+          "Poulet frit croustillant, salade de choux, cornichons et sauce sweet chili.",
       },
-      "Buffalo Chicken Taco": {
-        name: "Taco Poulet Buffalo",
+      bspicy: {
+        name: "Burger Spicy",
         description:
-          "Tortilla molle avec poulet frit en sauce Buffalo épicée, salade de chou fraîche et cornichons.",
+          "Poulet frit épicé, jalapeños, salade de choux et sauce piquante maison.",
       },
-      "Supreme Taco": {
-        name: "Taco Suprême",
+      wburger: {
+        name: "Wrap Burger",
         description:
-          "Taco généreux avec poulet frit, salade de chou, cornichons, jalapeños et notre sauce signature.",
+          "Poulet frit croustillant, fromage cheddar, frites, cornichons, salade et sauce Coq Zone.",
+      },
+      wclassic: {
+        name: "Wrap Classique",
+        description:
+          "Poulet frit croustillant, frites, cornichons, salade et sauce Coq Zone.",
+      },
+      wspicy: {
+        name: "Wrap Épicé",
+        description:
+          "Poulet frit épicé, frites, jalapeños, salade et sauce piquante maison.",
       },
     },
   },

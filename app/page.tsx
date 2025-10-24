@@ -250,27 +250,24 @@ const CoqZoneWebsite = () => {
                 <h4 className="text-2xl font-bold text-white mb-3">
                   Uber Eats
                 </h4>
-                <p className="text-gray-400 mb-6">
-                  {language === "EN"
-                    ? "Fast delivery in 30 minutes"
-                    : "Livraison rapide en 30 minutes"}
-                </p>
-                <div className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-400 text-white font-bold rounded-full transition-colors duration-300">
-                  {language === "EN" ? "Order Now" : "Commander"}
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </div>
+                <a href="https://www.ubereats.com/ca/store/coq-zone/">
+                  <div className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-400 text-white font-bold rounded-full transition-colors duration-300">
+                    {language === "EN" ? "Order Now" : "Commander"}
+                    <svg
+                      className="w-5 h-5 ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -281,11 +278,6 @@ const CoqZoneWebsite = () => {
                   <img src="/doordash.svg" alt="" className="w-17 h-17" />
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-3">DoorDash</h4>
-                <p className="text-gray-400 mb-6">
-                  {language === "EN"
-                    ? "Reliable delivery service"
-                    : "Service de livraison fiable"}
-                </p>
                 <div className="inline-flex items-center px-6 py-3 bg-red-500 hover:bg-red-400 text-white font-bold rounded-full transition-colors duration-300">
                   {language === "EN" ? "Order Now" : "Commander"}
                   <svg
@@ -314,11 +306,6 @@ const CoqZoneWebsite = () => {
                 <h4 className="text-2xl font-bold text-white mb-3">
                   Skip The Dishes
                 </h4>
-                <p className="text-gray-400 mb-6">
-                  {language === "EN"
-                    ? "Local favorite delivery"
-                    : "Livraison locale préférée"}
-                </p>
                 <div className="inline-flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-400 text-white font-bold rounded-full transition-colors duration-300">
                   {language === "EN" ? "Order Now" : "Commander"}
                   <svg
@@ -339,7 +326,7 @@ const CoqZoneWebsite = () => {
             </div>
           </div>
 
-          {/* Special Offer Banner */}
+          {/* Special Offer Banner | not needed rn but maybe later*/}
           {/* <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-orange-500 rounded-3xl p-8 text-center text-black shadow-2xl">
             <div className="flex items-center justify-center mb-4">
               <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mr-4">
@@ -402,6 +389,7 @@ const CoqZoneWebsite = () => {
                   {category.title}
                 </h3>
 
+                {/* Combos poulets */}
                 <div className="space-y-4">
                   {category.items.map((item, itemIndex) => (
                     <div
@@ -472,13 +460,13 @@ const CoqZoneWebsite = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
                   <span className="text-sm md:text-base">
-                    239 Boulevard Sainte-Rose, Laval
+                    239 Bd Sainte-Rose, Laval, QC H7L 1L7
                   </span>
                 </div>
                 <br />
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                  <span className="text-sm md:text-base">(514) 123-4567</span>
+                  <span className="text-sm md:text-base">(450) 622-5999</span>
                 </div>
               </div>
             </div>
@@ -499,7 +487,7 @@ const CoqZoneWebsite = () => {
               </div>
             </div>
 
-            <div className="animate-fade-in-up animate-delay-400">
+            {/* <div className="animate-fade-in-up animate-delay-400">
               <h3 className="text-xl md:text-2xl font-bold gradient-text mb-6">
                 {t.followUs}
               </h3>
@@ -517,7 +505,7 @@ const CoqZoneWebsite = () => {
                   <Instagram className="w-5 h-5 md:w-6 md:h-6" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="border-t border-gray-700 pt-8 text-center text-gray-500">

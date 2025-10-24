@@ -23,128 +23,126 @@ export const getMenuCategories = (
   t: Translation
 ): MenuCategory[] => [
   {
-    title: t.categories["Chicken Combos"],
+    title: t.categories["CHICKEN TENDERS COMBOS"],
     icon: "🍗",
     items: [
       {
-        name: t.items["Snack Pack (3pcs)"].name,
-        price: "$12.99",
-        description: t.items["Snack Pack (3pcs)"].description,
+        name: t.items["Cmb3MCX"].name,
+        price: "$16.99",
+        description: t.items["Cmb3MCX"].description,
       },
       {
-        name: t.items["Crispy Classic (5pcs)"].name,
-        price: "$18.99",
-        description: t.items["Crispy Classic (5pcs)"].description,
+        name: t.items["Cmb5MCX"].name,
+        price: "$22.99",
+        description: t.items["Cmb5MCX"].description,
       },
       {
-        name: t.items["Family Feast (10pcs)"].name,
-        price: "$32.99",
-        description: t.items["Family Feast (10pcs)"].description,
+        name: t.items["Cmb7MCX"].name,
+        price: "$29.99",
+        description: t.items["Cmb7MCX"].description,
+      },
+      {
+        name: t.items["Cmb10MCX"].name,
+        price: "$36.99",
+        description: t.items["Cmb10MCX"].description,
       },
     ],
   },
   {
-    title: t.categories["Gourmet Burgers"],
+    title: t.categories["CHICKEN WINGS"],
     icon: "🍔",
     items: [
       {
-        name: t.items["Coq Zone Classic Burger"].name,
-        price: "$14.99",
-        description: t.items["Coq Zone Classic Burger"].description,
+        name: t.items["7Ws"].name,
+        price: "$8.99",
+        description: t.items["7Ws"].description,
       },
       {
-        name: t.items["Sweet Chili Burger"].name,
-        price: "$15.99",
-        description: t.items["Sweet Chili Burger"].description,
+        name: t.items["7WsC"].name,
+        price: "$12.99",
+        description: t.items["7WsC"].description,
       },
       {
-        name: t.items["Spicy Burger"].name,
+        name: t.items["12Ws"].name,
         price: "$15.99",
-        description: t.items["Spicy Burger"].description,
+        description: t.items["12Ws"].description,
+      },
+      {
+        name: t.items["12WsC"].name,
+        price: "$18.99",
+        description: t.items["12WsC"].description,
+      },
+      {
+        name: t.items["18Ws"].name,
+        price: "$21.99",
+        description: t.items["18Ws"].description,
+      },
+      {
+        name: t.items["18WsC"].name,
+        price: "$24.99",
+        description: t.items["18WsC"].description,
+      },
+      {
+        name: t.items["24Ws"].name,
+        price: "$27.99",
+        description: t.items["24Ws"].description,
+      },
+      {
+        name: t.items["24WsC"].name,
+        price: "$31.99",
+        description: t.items["24WsC"].description,
+      },
+      {
+        name: t.items["30Ws"].name,
+        price: "$29.99",
+        description: t.items["30Ws"].description,
+      },
+      {
+        name: t.items["30WsC"].name,
+        price: "$36.99",
+        description: t.items["30WsC"].description,
       },
     ],
   },
   {
-    title: t.categories["Fresh Bowls"],
+    title: t.categories["BURGERS"],
     icon: "🍚",
     items: [
       {
-        name: t.items["Pocoq Zone Bowl"].name,
-        price: "$13.99",
-        description: t.items["Pocoq Zone Bowl"].description,
+        name: t.items["bclassic"].name,
+        price: "$8.99",
+        description: t.items["bclassic"].description,
       },
       {
-        name: t.items["Rice and Chicken Bowl"].name,
-        price: "$11.99",
-        description: t.items["Rice and Chicken Bowl"].description,
-      },
-      {
-        name: t.items["Fries and Chicken Bowl"].name,
-        price: "$12.99",
-        description: t.items["Fries and Chicken Bowl"].description,
-      },
-    ],
-  },
-  {
-    title: t.categories["Wings & Fries"],
-    icon: "🔥",
-    items: [
-      {
-        name: t.items["Solo Box (7pcs)"].name,
-        price: "$12.99",
-        description: t.items["Solo Box (7pcs)"].description,
-      },
-      {
-        name: t.items["Duo Pack (12pcs)"].name,
-        price: "$19.99",
-        description: t.items["Duo Pack (12pcs)"].description,
-      },
-      {
-        name: t.items["Party Pack (24pcs)"].name,
-        price: "$34.99",
-        description: t.items["Party Pack (24pcs)"].description,
-      },
-    ],
-  },
-  {
-    title: t.categories["Gourmet Poutines"],
-    icon: "🍟",
-    items: [
-      {
-        name: t.items["Classic Poutine"].name,
+        name: t.items["bsweetchili"].name,
         price: "$9.99",
-        description: t.items["Classic Poutine"].description,
+        description: t.items["bsweetchili"].description,
       },
       {
-        name: t.items["Coq Zone Poutine"].name,
-        price: "$14.99",
-        description: t.items["Coq Zone Poutine"].description,
-      },
-      {
-        name: t.items["Buffalo Chicken Poutine"].name,
-        price: "$15.99",
-        description: t.items["Buffalo Chicken Poutine"].description,
+        name: t.items["bspicy"].name,
+        price: "$10.99",
+        description: t.items["bspicy"].description,
       },
     ],
   },
   {
-    title: t.categories["Wraps & Tacos"],
+    title: t.categories["FRIED CHICKEN WRAPS"],
     icon: "🌯",
     items: [
       {
-        name: t.items["Classic Chicken Wrap"].name,
-        price: "$11.99",
-        description: t.items["Classic Chicken Wrap"].description,
+        name: t.items["wburger"].name,
+        price: "$10.95",
+        description: t.items["wburger"].description,
       },
       {
-        name: t.items["Buffalo Chicken Taco"].name,
-        price: "$4.99",
-        description: t.items["Buffalo Chicken Taco"].description,
+        name: t.items["wclassic"].name,
+        price: "$10.49",
+        description: t.items["wclassic"].description,
       },
       {
-        name: t.items["Supreme Taco"].name,
-        price: "$5.99",
-        description: t.items["Supreme Taco"].description,
+        name: t.items["wspicy"].name,
+        price: "$10.49",
+        description: t.items["wspicy"].description,
       },
     ],
   },
